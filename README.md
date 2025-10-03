@@ -1,4 +1,4 @@
-# React + Vite
+# Live Link: https://react-router-and-form-data.netlify.app/
 
 ## 4 ways to get data from a form
 1. use onSubmit. const name = e.target.[name of input field].value 
@@ -11,4 +11,7 @@
         password: '',
         phone: '',
     })
-4. uncontrolled: react will not controlled
+4. uncontrolled: react will not control, using useRef('')  
+    const emailRef = useRef(''); 
+    <!-- <input type="email" ref={emailRef}  /> -->
+    email = emailRef.current.value;
