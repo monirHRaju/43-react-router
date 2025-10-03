@@ -14,6 +14,10 @@ const Header = () => {
                 <NavLink to='/users2'>Users 2</NavLink>
                 <NavLink to='/posts'>Posts</NavLink>
                 <NavLink to='/comments'>Comments</NavLink>
+                <NavLink to='/simpleform'>Simple Form</NavLink>
+                <NavLink to='/formdataget'>Get Form</NavLink>
+                <NavLink to='/formdatastate'>Form Controlled</NavLink>
+                <NavLink to='/form4'>Form useRef</NavLink>
             </nav>
         </div>
     );

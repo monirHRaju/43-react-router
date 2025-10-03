@@ -20,6 +20,10 @@ import Posts from "./components/Posts/Posts.jsx";
 import PostDetail from "./components/PostDetail/PostDetail.jsx";
 import Comments from "./components/Comments/Comments.jsx";
 import CommentDetails from "./components/CommentDetails/CommentDetails.jsx";
+import SingleForm from "./components/SingleForm/SingleForm.jsx";
+import FormData from "./components/FormData/FormData.jsx";
+import FormDataGet from "./components/FormData/FormDataGet.jsx";
+import FormUseRef from "./components/FormData/FormUseRef.jsx";
 
 const usersPromise = fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
@@ -71,7 +75,24 @@ const router = createBrowserRouter([
       {
         path: '*',
         element: <h3>Not Found: 404 Status</h3>
-      }
+      },
+      {
+        path: 'simpleform',
+        element: <SingleForm></SingleForm>
+      },
+      {
+        path: 'formdatastate',
+        element: <FormData></FormData>
+      },
+      {
+        path: 'formdataget',
+        element: <FormDataGet></FormDataGet>
+      },
+      {
+        path: 'form4',
+        element: <FormUseRef></FormUseRef>  
+      },
+
     ],
   },
 ]);
